@@ -1,0 +1,59 @@
+	#headbar{
+		z-index: 1;
+		background-color: #FF0000;
+		color: white;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100px;
+		min-width: 800px;
+		position: fixed;
+		text-align: right;
+	}
+	#linkbar {
+		z-index: 1;
+		background-color: #FF0000;
+		position: fixed;
+		top: 100px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		min-width: 800px;
+		position: fixed;
+	}
+	#links{
+		color: white;
+		text-align: center;
+		font-family: times;
+		font-size: 150%;
+		overflow-x: hidden;
+	}
+	#links a {
+		color: white;
+	}
+	#name{
+		padding-top: 20px;
+		text-align: center;
+		font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+		font-size: 250%;
+	}
+	#email{
+		padding-top: 7px;
+		font-size: large;
+		font-family: times;
+	}
+	#content {
+		z-index: -1;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 140px;
+	}
+	img.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	body {
+		background-color: #FFFFCC;
+	}
