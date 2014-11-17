@@ -1,29 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8"/>
-	<title>Cornell ACM ICPC</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css" />
-</head>
-<body>
-	<div id="headbar">
-		<div id="name">
-			ACM-ICPC
-			<div id="email">Cornell University</div>
-		</div>
-	</div>
-	<div id="linkbar">
-		<div id="links">
-			<a href="index.html">Home</a>
-			<a href="about.html">About</a>
-			<a href="awards.html">Awards</a>
-			<a href="members.html">For Members</a>
-		</div>
-	</div>
-	<div id="content">
-		<h1>Schedule</h1>
-		<p>Schedule stuff here</p>
-		<h1>Homework</h1>
-		<p>Homework stuff here</p>
-	</div>
-</body>
+<html>
+  <head>
+    <title>Cornell ACM-ICPC</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <div id="subNav">
+        <ul>
+          <li id="seniorButton"><a href="#seniors">Seniors</a></li>
+          <li id="juniorButton"><a href="#juniors">Juniors</a></li>
+          <li id="sophButton"><a href="#sophomores">Sophomores</a></li>
+          <li id="freshButton"><a href="#freshmen">Freshmen</a></li>
+        </ul>
+      </div>
+
+      <div id="seniors" class="group">
+        <div class="subTitle">
+          <h2>Seniors</h2>
+        </div>
+        <div class="contentArea">
+          <ul>
+            <li>
+              <div class="member">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="juniors" class="group">
+        <div class="subTitle">
+          <h2>Seniors</h2>
+        </div>
+        <div class="contentArea">
+          <ul>
+            <li>
+              <div class="member">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="sophomores" class="group">
+        <div class="subTitle">
+          <h2>Seniors</h2>
+        </div>
+        <div class="contentArea">
+          <ul>
+            <li>
+              <div class="member">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="freshmen" class="group">
+        <div class="subTitle">
+          <h2>Seniors</h2>
+        </div>
+        <div class="contentArea">
+          <ul>
+            <li>
+              <div class="member">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
