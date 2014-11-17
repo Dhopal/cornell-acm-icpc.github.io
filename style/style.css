@@ -57,3 +57,28 @@
 	body {
 		background-color: #FFFFCC;
 	}
+	
+#subNav {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#subNav li {
+	display: inline-block;
+}
+
+#subNav a{
+	padding-left: 40px;
+	padding-right: 40px;
+    border-radius: 25px;
+    background-color: #812728;
+    font-size: 20px;
+    text-decoration: none;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#subNav a:hover {
+	background-color: #bd393b;
+}
