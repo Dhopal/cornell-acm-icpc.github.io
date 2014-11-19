@@ -4,8 +4,10 @@
 	<meta charset="utf-8"/>
 	<title>Cornell ACM ICPC</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<script src="js/navigation.js" type="text/javascript"></script>
 </head>
 <body>
+	<?php include("header.html"); ?>
 	<img src="images/cornell_cs.gif"><br>
 	<a href="index.html">Home</a>
 	<a href="about.html">About</a>
