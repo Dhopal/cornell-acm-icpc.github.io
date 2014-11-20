@@ -22,6 +22,10 @@
         </ul>
       </div>
 
+      		<iframe src="https://www.google.com/calendar/embed?src=acm.icpc.cornell%40gmail.com&ctz=America/New_York"
+			style="border: 0" width="800" height="600"
+			frameborder="0"
+			scrolling="no">
       <div id="seniors" class="group">
         <div class="subTitle">
           <h2>Seniors</h2>

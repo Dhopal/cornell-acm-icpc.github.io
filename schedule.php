@@ -11,7 +11,8 @@
 	<?php include("header.html"); ?>
 	<div id="content">
 		<h1>Schedule</h1>
-		<p>Schedule stuff here</p>
+		<p>schedule stuff goes here</p>
+		</iframe>
 		<h1>Homework</h1>
 		<p>Homework stuff here</p>
 	</div>
