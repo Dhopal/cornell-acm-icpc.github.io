@@ -29,12 +29,14 @@
 		text-align: center;
 		font-family: times;
 		font-size: 150%;
-		overflow-x: hidden;
 	}
 	#links a {
 		color: white;
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	#links a:hover{
+		color:#b2b2b2;
 	}
 	#logo{
 		width: 50%;
