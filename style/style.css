@@ -65,6 +65,9 @@
 		font-size: 40px;
 		padding-top: 20px;
 	}
+	.active{
+		border: thick solid white;
+	}
 /*END:-----------------------NAVIGATION MENU----------------------------*/
 
 
