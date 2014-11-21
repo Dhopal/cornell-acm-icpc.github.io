@@ -43,6 +43,7 @@
 	}
 	#links a:hover{
 		color:#b2b2b2;
+		border-color: #b2b2b2;
 	}
 	#logo{
 		width: 50%;
@@ -68,9 +69,11 @@
 		font-size: 40px;
 		padding-top: 20px;
 	}
-	.active{
-		border: thick solid white;
+	#ACMICPC_name_link{
+		text-decoration: none;
+		color:white;
 	}
+
 /*END:-----------------------NAVIGATION MENU----------------------------*/
 
 
