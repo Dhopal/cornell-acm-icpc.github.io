@@ -4,7 +4,7 @@
 	}
 	#headbar{
 		z-index: 1;
-		background-color: #FF0000;
+		background-color: #A90916;
 		color: white;
 		top: 0;
 		left: 0;
@@ -17,7 +17,7 @@
 	}
 	#linkbar {
 		z-index: 1;
-		background-color: #FF0000;
+		background-color: #A90916;
 		position: fixed;
 		top: 100px;
 		left: 0;
@@ -81,7 +81,7 @@
 		margin-right: auto;
 	}
 	body {
-		background-color: #FFFFCC;
+		background-color: #FAFAFA;
 		font-family: 'Noticia Text', serif;
 	}
 	
