@@ -1,0 +1,6 @@
+/*SCHEDULE STYLE PAGE*/
+
+/*Highlight current page:*/
+#schedule_nav{
+	border: 2px solid white;
+}

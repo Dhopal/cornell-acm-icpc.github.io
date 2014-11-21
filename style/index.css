@@ -1,7 +1,13 @@
+/*INDEX STYLE PAGE*/
+
+/*Highlight current page:*/
+#index_nav{
+	border: 2px solid white;
+}
+
 #intro {
 	text-align: center;
 }
-
 #sponsors {
 	text-align: center;
 	background-color: white;
