@@ -1,3 +1,18 @@
 #intro {
 	text-align: center;
 }
+
+#sponsors {
+	text-align: center;
+	background-color: white;
+	border: #D9D9D9 solid 1px;
+}
+
+#sponsors img {
+	width: 150px;
+	display: inline-block;
+	vertical-align: center;
+	text-align: center;
+	margin: 20px;
+	padding: 2px;
+}

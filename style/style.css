@@ -75,11 +75,7 @@
 		margin-right: 20%;
 		margin-top: 140px;
 	}
-	img.center {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+
 	body {
 		background-color: #FAFAFA;
 		font-family: 'Noticia Text', serif;

@@ -21,9 +21,10 @@
 		<p>Congratulations to Vincent Chan, Eric First, and Hooyeon Haden Lee for placing second at the regional and advancing to the World Finals! They will be competing with teams all over the world in Stockholm, Sweden, between April 18-22.</p>
 
 		<h1>Sponsors:</h1>
-		<p>This is where the sponsors go</p>
-		<img src="images/cornell-2.gif" width="150" alt="Cornell University"><br>
-		<img src="images/212_GH_LOGO.gif" height="100" alt="Green Hills Software"><br>
-		<img src="images/Jane_Street_Logo_0.jpg" height="100" alt="Jane Street"><br>
+		<div id="sponsors">
+			<img src="images/cornell-2.gif" alt="Cornell University" />
+			<img src="images/212_GH_LOGO.gif" alt="Green Hills Software" />
+			<img src="images/Jane_Street_Logo_0.jpg" alt="Jane Street" />
+		</div>
 	</div>
 </body>
