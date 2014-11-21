@@ -1,4 +1,7 @@
 /*START:-----------------------NAVIGATION MENU----------------------------*/
+	header{
+		font-family: 'Ropa Sans', sans-serif;
+	}
 	#headbar{
 		z-index: 1;
 		background-color: #FF0000;
@@ -27,13 +30,13 @@
 	#links{
 		color: white;
 		text-align: center;
-		font-family: times;
 		font-size: 150%;
 	}
 	#links a {
 		color: white;
 		padding-left: 30px;
 		padding-right: 30px;
+		text-decoration: none;
 	}
 	#links a:hover{
 		color:#b2b2b2;
@@ -51,16 +54,16 @@
 	}
 	#name{
 		text-align: right;
-		font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
 		width: 50%;
 		float:right;
 	}
-	#ACMICPC_name, #email{
+	#ACMICPC_name, #cornell_name{
 		padding-right: 20px;
+		margin:0px;
 	}
 	#ACMICPC_name{
-		font-size: larger;
-		padding-top:20px
+		font-size: 40px;
+		padding-top: 20px;
 	}
 /*END:-----------------------NAVIGATION MENU----------------------------*/
 
@@ -79,6 +82,7 @@
 	}
 	body {
 		background-color: #FFFFCC;
+		font-family: 'Noticia Text', serif;
 	}
 	
 #subNav {
@@ -99,7 +103,6 @@
     font-size: 20px;
     text-decoration: none;
 	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #subNav a:hover {

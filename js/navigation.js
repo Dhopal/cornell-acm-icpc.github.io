@@ -3,6 +3,5 @@ $(document).ready(function(){
     $(this).siblings().css("border", "none");
     $(this).css("border", "thick solid white" );
 })
-
 });
 
