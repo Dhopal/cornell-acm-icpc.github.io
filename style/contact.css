@@ -1,0 +1,46 @@
+/*CONTACT FORM STYLE PAGE*/
+
+/*Highlight current page:*/
+#contact_nav{
+	border: 2px solid white;
+}
+
+body{
+    padding-top: 140px;
+}
+
+#required{
+    font-size: .75em;
+    margin-bottom: 0;
+    margin-left:10%;
+}
+
+#contact_form{
+    width: 80%;
+    margin: auto;
+}
+
+.error, .generic_error{
+    text-decoration: underline;
+    color: yellow;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: center;
+}
+
+.error{
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.success_message{
+    text-align: center;
+}
+
+#submit{
+    width:100px;
+    height: 100px;
+}
