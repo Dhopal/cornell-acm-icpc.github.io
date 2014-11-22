@@ -20,13 +20,13 @@
 		<div id="announcements">
 			<div class="message">
 				<h3>We are advancing to world finals!</h3>
-				<p>Congratulations to the Cornell teams at the ACM-ICPC competition.<br>
+				<p>Congratulations to the Cornell teams at the ACM-ICPC competition.<br><br>
 				Two of our teams solved 8 problems out of 9 (which was the maximum number of problems solved by any team).
-				Eduardo Felipe, Rafael Marinheiro and Victor Reis will go to Morocco in May for the World Finals.<br>
+				Eduardo Felipe, Rafael Marinheiro and Victor Reis will go to Morocco in May for the World Finals.<br><br>
 				Cornell's other two teams solved 7 and 6 problems, placing them at 12th and 17th positions respectively.
 				This was out of 45 teams where most teams came from Cornell, Princeton, Columbia, Yale, NYU and Stony Brook.
 				Cornell had the best "max min" result among all universities, with all 4 teams in the top 17 positions
-				(not considering CUNY QC, which had only one team competing, and got the 14th place)<br>
+				(not considering CUNY QC, which had only one team competing, and got the 14th place)<br><br>
 				Congratulations to the team members, and to Cornell faculty for providing the education necessary for these results.</p>
 			</div>
 		</div>

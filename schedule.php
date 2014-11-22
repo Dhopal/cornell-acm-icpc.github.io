@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" type="text/css" href="style/schedule.css" />
-    <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

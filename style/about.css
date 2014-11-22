@@ -4,3 +4,12 @@
 #about_nav{
 	border: 2px solid white;
 }
+
+#members {
+	z-index: -1;
+	margin-top: 140px;
+}
+
+ul {
+	list-style-type: none;
+}
