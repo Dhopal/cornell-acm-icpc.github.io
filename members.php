@@ -75,8 +75,18 @@
       $sophomores = array();
       $freshmen = array();
 
+      $today = getdate();
+
+      $oldest = $today["year"];
+
+      if ($today["mon"] >= 8) {
+        $oldest++;
+      }
+
       if (($handle = fopen("files/members.csv", "r")) !== FALSE) {
-          while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+          while (!feof($handle)) {
+              $data = fgetcsv($handle);
+              
               if ($row === 1) {
                 $row++;
                 continue;
@@ -87,16 +97,16 @@
               $member = new Member($data[0], $data[2], $data[3], $data[4]);
 
               switch ($data[1]) {
-                case "2015":
+                case strval($oldest):
                     array_push($seniors, $member);
                     break;
-                case "2016":
+                case strval($oldest + 1):
                     array_push($juniors, $member);
                     break;
-                case "2017":
+                case strval($oldest + 2):
                     array_push($sophomores, $member);
                     break;
-                case "2018":
+                case strval($oldest + 3):
                     array_push($freshmen, $member);
                     break;
               }
