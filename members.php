@@ -21,26 +21,26 @@
       public $interests = '';
 
       public function __construct($name, $major, $cs, $interests) {
-        $this->$name = $name;
-        $this->$major = $major;
-        $this->$cs = $cs;
-        $this->$interests = $interests;
+        $this->name = $name;
+        $this->major = $major;
+        $this->cs = $cs;
+        $this->interests = $interests;
       }
 
-      function print() {
+      function printDetails() {
         echo '<li class="member">';
-        echo '<h1>' . $this->$name . '</h1>';
+        echo '<h1>' . $this->name . '</h1>';
 
-        if ($major !== "") {
-          echo '<p>Major: ' . $this->$major . '</p>';
+        if ($this->major !== "") {
+          echo '<p>Major: ' . $this->major . '</p>';
         }
 
-        if ($cs !== "") {
-          echo '<p>Concentration: ' . $this->$cs . '</p>';
+        if ($this->cs !== "") {
+          echo '<p>Concentration: ' . $this->cs . '</p>';
         }
 
-        if ($interests !== "") {
-          echo '<p>Interests: ' . $this->$interests . '</p>';
+        if ($this->interests !== "") {
+          echo '<p>Interests: ' . $this->interests . '</p>';
         }
 
         echo '</li>';
@@ -60,7 +60,7 @@
             <ul>';
       //add members
             foreach ($members as $m) {
-              $m->print();
+              $m->printDetails();
             }
 
       echo  '</ul>
@@ -76,8 +76,7 @@
       $freshmen = array();
 
       if (($handle = fopen("files/members.csv", "r")) !== FALSE) {
-          while (($data = fgetcsv($handle, 2000, ",")) !== FALSE) {
-              $num = count($data);
+          while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
               if ($row === 1) {
                 $row++;
                 continue;
@@ -85,9 +84,9 @@
               $row++;
               //Find out which year the member is in
               //Add to correct class
-              $member = Member($data[2], $data[4], $data[5], $data[6]);
+              $member = new Member($data[0], $data[2], $data[3], $data[4]);
 
-              switch ($data[3]) {
+              switch ($data[1]) {
                 case "2015":
                     array_push($seniors, $member);
                     break;
