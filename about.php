@@ -24,8 +24,8 @@
 			<br>
 			Saketh Are</p>
 		<h3>Members</h3>
-		<p>Get to know the team
+		<a href="members.php"><p>Get to know the team</p></a>
 			<br>
-			Resume Book</p>
+			<p>Resume Book</p>
 	</div>
 </body>
