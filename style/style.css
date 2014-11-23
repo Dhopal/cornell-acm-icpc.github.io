@@ -30,9 +30,13 @@ header{
 	position: fixed;
 }
 
-#details {
-	z-index: 1;
-	position: fixed;
+.main {
+	display: inline;
+	
+}
+
+.det {
+	clear: both;
 }
 
 #links{

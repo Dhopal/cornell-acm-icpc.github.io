@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	$(".det").hide();
 
-	$("#about_nav").mouseover(function(){
-		$("#about_det").show();
+	$(".main").mouseover(function(){
+		$(this).find(".det").show();
 	});
 
-	$("#about_nav").mouseout(function(){
-		$("#about_det").hide();
+	$(".main").mouseout(function(){
+		$(this).find(".det").hide();
 	});
 });
