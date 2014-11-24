@@ -143,5 +143,6 @@
       </div>
 
       <?php printMembers(); ?>
+    </div>
   </body>
 </html>

@@ -5,11 +5,42 @@
 	border: 2px solid white;
 }
 
+h2 a {
+	color: black;
+	text-decoration: none;
+}
+
 #members {
 	z-index: -1;
 	margin-top: 140px;
 }
 
-ul {
+#members ul {
 	list-style-type: none;
+}
+
+#coach h1 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#group1 {
+	float: left;
+}
+
+#group2 {
+	float: right;
+}
+
+.sec {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.sec h3 {
+	text-decoration: underline;
+}
+
+.sec a {
+	text-decoration: none;
 }
