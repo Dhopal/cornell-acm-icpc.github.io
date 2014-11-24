@@ -2,12 +2,15 @@ $(document).ready(function() {
 	$(".group .contentArea").hide();
 
 	$(".group").click(function(){
+		$content = $(this).find(".contentArea");
+		$visible = $content.is(':visible');
 		$(".group .contentArea").hide();
-		$(this).find(".contentArea").show();
-	});
-
-	$(".group").dblclick(function(){
-		$(this).find(".contentArea").hide();
+		if ($visible) {
+			$content.hide();	
+		}
+		else {
+			$content.show();
+		}
 	});
 
 	$("#seniorButton").click(function(){
