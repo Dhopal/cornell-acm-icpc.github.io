@@ -93,16 +93,6 @@ nav ul ul ul {
 	min-width: 800px;
 	position: fixed;
 }
-
-.main {
-	display: inline;
-	
-}
-
-.det {
-	clear: both;
-}
-
 #links{
 	color: white;
 	text-align: center;
@@ -114,7 +104,6 @@ nav ul ul ul {
 	padding-left: 30px;
 	padding-right: 30px;
 	text-decoration: none;
-	display: inline-block;
 }
 #links a:hover{
 	color:#b2b2b2;
@@ -155,7 +144,6 @@ nav ul ul ul {
 /*START:-----------------------BODY----------------------------*/
 #content {
 	z-index: -1;
-	clear: both;
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-top: 140px;
