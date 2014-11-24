@@ -49,7 +49,7 @@
     }
 
     function usortTest($a, $b) {
-      return strcmp($a->$name, $b->name);
+      return strcmp($a->name, $b->name);
     } 
 
     function printYear($id, $label, $members) {
@@ -86,35 +86,59 @@
 
       if (($handle = fopen("files/members.csv", "r")) !== FALSE) {
           while (!feof($handle)) {
-              $data = fgetcsv($handle);
+              $data = fgetcsv($handle, 0, "\r");
 
-              if ($row === 1) {
-                $row++;
-                continue;
-              }
-              $row++;
-              //Find out which year the member is in
-              //Add to correct class
-              $member = new Member($data[0], $data[2], $data[3], $data[4]);
+              for ($x = 1; $x < count($data); $x++) {
+                $person = explode(",", $data[$x]);
 
-              switch ($data[1]) {
-                case strval($oldest):
-                    array_push($seniors, $member);
-                    break;
-                case strval($oldest + 1):
-                    array_push($juniors, $member);
-                    break;
-                case strval($oldest + 2):
-                    array_push($sophomores, $member);
-                    break;
-                case strval($oldest + 3):
-                    array_push($freshmen, $member);
-                    break;
+                $name = "";
+                $year = "";
+                $major = "";
+                $cs = "";
+                $interests = "";
+
+                if (count($person) >= 1) {
+                  $name = $person[0];
+                }
+                if (count($person) >= 2) {
+                  $year = $person[1];
+                }
+                if (count($person) >= 3) {
+                  $major = $person[2];
+                }
+                if (count($person) >= 4) {
+                  $cs = $person[3];
+                }
+                if (count($person) >= 5) {
+                  $interests = $person[4];
+                }
+
+                $member = new Member($name, $major, $cs, $interests);
+
+                //Find out which year the member is in
+                //Add to correct class
+                switch ($year) {
+                  case strval($oldest):
+                      array_push($seniors, $member);
+                      break;
+                  case strval($oldest + 1):
+                      array_push($juniors, $member);
+                      break;
+                  case strval($oldest + 2):
+                      array_push($sophomores, $member);
+                      break;
+                  case strval($oldest + 3):
+                      array_push($freshmen, $member);
+                      break;
+              } 
+
+
               }
           }
           fclose($handle);
+      } else {
+        echo 'handle is false';
       }
-
       //sort
       usort($seniors, "usortTest");
       usort($juniors, "usortTest");
