@@ -30,7 +30,12 @@
 
       function printDetails() {
         echo '<li class="member">';
-        echo '<h1>' . $this->name . '</h1>';
+        if (file_exists("files/" . $this->name . ".pdf")) {
+          echo '<h1><a href="' . "files/" . $this->name . ".pdf" . '">' . $this->name . '</a></h1>';
+        }
+        else {
+          echo '<h1>' . $this->name . '</h1>';
+        }
 
         if ($this->major !== "") {
           echo '<p>Major: ' . $this->major . '</p>';

@@ -19,6 +19,10 @@ h2 a {
 	list-style-type: none;
 }
 
+.member a {
+	color: black;
+}
+
 #coach h1 {
 	text-align: center;
 	padding-top: 10px;
