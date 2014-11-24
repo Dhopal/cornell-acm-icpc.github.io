@@ -39,7 +39,9 @@ body{
 .success_message{
     text-align: center;
 }
-
+#personal_info, #questions{
+    min-width: 800px;
+}
 #submit{
     width:100px;
     height: 100px;

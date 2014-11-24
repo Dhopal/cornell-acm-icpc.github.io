@@ -108,7 +108,7 @@
       $error
       <p id="required">* indicates required field</p>
       <form action="contact.php" id="contact_form" method="post">
-         <fieldset>
+         <fieldset id="personal_info">
             <h1> Personal Information </h1>
             <label for="first_name"> First Name* : </label>
             <input type="text" name="first_name" id="first_name" title="First Name" placeholder="Sam" value = "$first_name" required>
@@ -128,7 +128,7 @@
             $email_error
          </fieldset>
          
-         <fieldset>
+         <fieldset id="questions">
             <h1> Questions </h1>
             <p><label for="reason_for_contact">What is your reason for contact?*</label></p>
             <select id="reason_for_contact" name="reason_for_contact">

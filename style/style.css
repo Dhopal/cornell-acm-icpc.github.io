@@ -5,6 +5,70 @@
 header{
 	font-family: 'Droid Sans', sans-serif;
 }
+
+/*Drop Down Menu Styling:*/
+nav{
+	height: 35px;
+}
+nav ul ul{
+	display: none;
+}
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+nav ul{
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+nav ul li {
+	float: left;
+}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block;
+		color: #757575;
+		text-decoration: none;
+	}
+
+nav ul ul {
+	background: #A90916;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		position: relative;
+		padding: 5px 0px 5px 0px;
+	}
+		nav ul ul li a {
+			color: #fff;
+			padding: 5px 0px 5px 0px;
+		}	
+			nav ul ul li a:hover {
+				color: #b2b2b2;
+			}
+
+nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+}
+/*Drop Down Menu Styling - End:*/
+
+
+
+
 #headbar{
 	z-index: 1;
 	color: white;
