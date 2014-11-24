@@ -36,7 +36,6 @@
 		<div id="group2" class="sec">
 			<h3>Members</h3>
 			<p><a href="members.php">Get to know the team</a></p>
-			<p>Resume Book</p>
 		</div>
 	</div>
 </body>
