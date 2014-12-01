@@ -36,6 +36,7 @@ header{
 			nav ul li:hover a {
 				color: #fff;
 			}
+<<<<<<< HEAD
 		
 		nav ul li a {
 			display: block;
@@ -67,6 +68,13 @@ header{
 		position: absolute; left: 100%; top:0;
 	}
 	/*Drop Down Menu Styling - End:*/
+=======
+
+nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+}
+/*Drop Down Menu Styling - End:*/
+>>>>>>> FETCH_HEAD
 
 #headbar{
 	z-index: 1;
