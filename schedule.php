@@ -18,8 +18,8 @@
     <?php include("header.html"); ?>
 
     <div id="content">
-          <iframe src="https://www.google.com/calendar/embed?src=acm.icpc.cornell%40gmail.com&ctz=America/New_York"
-			style="border: 0" width="800" height="600"
+          <iframe id ="google_schedule" src="https://www.google.com/calendar/embed?src=acm.icpc.cornell%40gmail.com&ctz=America/New_York"
+			style="border: 0" width="100%" height="600px"
 			frameborder="0"
 			scrolling="no">
     </div>

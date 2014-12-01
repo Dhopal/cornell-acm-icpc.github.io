@@ -17,17 +17,13 @@ body{
 
 #contact_form{
     width: 80%;
-    margin: auto;
+    margin-left:10%;
+    margin-right:10%;
 }
 
 .error, .generic_error{
     text-decoration: underline;
-    color: yellow;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    color: #A90916;
     text-align: center;
 }
 
@@ -40,9 +36,30 @@ body{
     text-align: center;
 }
 #personal_info, #questions{
-    min-width: 800px;
+    min-width: 700px;
 }
 #submit{
     width:100px;
     height: 100px;
+}
+
+
+/*******************MEDIA LAYOUT*******************/
+@media only screen and (max-width:840px){
+#contact_form{
+    width: 80%;
+    margin-left: 20px;
+}
+#required{
+    font-size: .75em;
+    margin-bottom: 0;
+    margin-left:20px;
+}
+
+#personal_info, #questions{
+    min-width: 500px;
+}
+#other_reason_for_contact{
+	cols: 100;
+}
 }
