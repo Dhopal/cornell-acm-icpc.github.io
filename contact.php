@@ -137,7 +137,7 @@
             <br>
             <label for="other_reason_for_contact">If you would like to elaborate on your reason for contact or have a general inquiry, feel free to do so below: </label>
             <br>
-            <textarea id="other_reason_for_contact" name="other_reason_for_contact" rows="10" cols="95" placeholder="Other Reason for Contact">$other_reason_for_contact</textarea>
+            <textarea id="other_reason_for_contact" name="other_reason_for_contact" rows="10" cols="95" placeholder="Other Reason for Contact" maxlength="$MAX_OTHER_REASON_FOR_CONTACT">$other_reason_for_contact</textarea>
          </fieldset>
          <input type="submit" id="submit" name="submit" value="Finish">
       </form>
