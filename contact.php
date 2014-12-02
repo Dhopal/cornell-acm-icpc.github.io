@@ -81,7 +81,7 @@
         }
         
         //other_reason_for_contact_error validation:
-         if( strlen($other_new_featured_ingredients) > $MAX_OTHER_REASON_FOR_CONTACT){
+         if( strlen($other_reason_for_contact) > $MAX_OTHER_REASON_FOR_CONTACT){
             $other_reason_for_contact_error = make_err("other_reason_for_contact_error", "Please only include ingredient (at most $MAX_OTHER_REASON_FOR_CONTACT characters.)");
             $success = FALSE;
          }
