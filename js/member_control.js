@@ -16,7 +16,7 @@ $(document).ready(function() {
 	$("#seniorButton").click(function(){
 		$("#seniors").trigger("click");
 	});
-	$("#seniorButton").click(function(){
+	$("#juniorButton").click(function(){
 		$("#juniors").trigger("click");
 	});
 	$("#sophButton").click(function(){

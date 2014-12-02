@@ -165,7 +165,7 @@
       <div id="subNav">
         <ul>
           <li id="seniorButton"><a href="#seniors">Seniors</a></li>
-          <li id="seniorButton"><a href="#juniors">Juniors</a></li>
+          <li id="juniorButton"><a href="#juniors">Juniors</a></li>
           <li id="sophButton"><a href="#sophomores">Sophomores</a></li>
           <li id="freshButton"><a href="#freshmen">Freshmen</a></li>
         </ul>
