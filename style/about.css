@@ -10,41 +10,18 @@ h2 a {
 	text-decoration: none;
 }
 
-#members {
-	z-index: -1;
-	margin-top: 140px;
-}
-
-#members ul {
-	list-style-type: none;
-}
-
-.member a {
-	color: black;
-}
-
-#coach h1 {
+#sponsors {
 	text-align: center;
-	padding-top: 10px;
+	background-color: white;
+	border: #D9D9D9 solid 1px;
+	margin-bottom: 50px;
 }
 
-#group1 {
-	float: left;
-}
-
-#group2 {
-	float: right;
-}
-
-.sec {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.sec h3 {
-	text-decoration: underline;
-}
-
-.sec a {
-	text-decoration: none;
+#sponsors img {
+	width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin: 20px;
+	padding: 2px;
 }

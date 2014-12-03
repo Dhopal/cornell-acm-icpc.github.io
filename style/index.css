@@ -12,26 +12,8 @@
 #announcements {
 	background-color: white;
 	border: #D9D9D9 solid 1px;
-	overflow: scroll;
-	height: 200px;
 }
 
 .message h3 {
 	color: #A90916;
-}
-
-#sponsors {
-	text-align: center;
-	background-color: white;
-	border: #D9D9D9 solid 1px;
-	margin-bottom: 50px;
-}
-
-#sponsors img {
-	width: 150px;
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-	margin: 20px;
-	padding: 2px;
 }

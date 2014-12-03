@@ -25,17 +25,11 @@
 
 		<hr>
 
-		<h2>Team:</h2>
-
-		<div id="group1" class="sec">
-			<h3>Coaches</h3>
-			<p><a href="daniel.php">Daniel Fleischman</a></p>
-			<p><a href="saketh.php">Saketh Are</a></p>
-		</div>
-
-		<div id="group2" class="sec">
-			<h3>Members</h3>
-			<p><a href="members.php">Get to know the team</a></p>
+		<h2>Sponsors:</h2>
+		<div id="sponsors">
+			<img src="images/cornell-2.gif" alt="Cornell University" />
+			<img src="images/212_GH_LOGO.gif" alt="Green Hills Software" />
+			<img src="images/Jane_Street_Logo_0.jpg" alt="Jane Street" />
 		</div>
 	</div>
 </body>

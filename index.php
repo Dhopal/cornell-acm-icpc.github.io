@@ -33,12 +33,5 @@
 				Congratulations to the team members, and to Cornell faculty for providing the education necessary for these results.</p>
 			</div>
 		</div>
-
-		<h1>Sponsors:</h1>
-		<div id="sponsors">
-			<img src="images/cornell-2.gif" alt="Cornell University" />
-			<img src="images/212_GH_LOGO.gif" alt="Green Hills Software" />
-			<img src="images/Jane_Street_Logo_0.jpg" alt="Jane Street" />
-		</div>
 	</div>
 </body>
