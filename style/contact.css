@@ -2,7 +2,7 @@
 
 /*Highlight current page:*/
 #contact_nav{
-	border: 2px solid white;
+	border-bottom: solid medium white;
 }
 
 body{

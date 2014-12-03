@@ -2,7 +2,7 @@
 
 /*Highlight current page:*/
 #about_nav {
-	border: 2px solid white;
+	border-bottom: solid medium white;
 }
 
 h2 a {
