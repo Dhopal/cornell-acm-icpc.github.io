@@ -1,0 +1,70 @@
+/*ABOUT STYLE PAGE*/
+
+/*Highlight current page:*/
+#about_nav {
+	border: 2px solid white;
+}
+
+h2 a {
+	color: black;
+	text-decoration: none;
+}
+
+#sponsors {
+	text-align: center;
+	background-color: white;
+	border: #D9D9D9 solid 1px;
+	margin-bottom: 50px;
+}
+
+#sponsors img {
+	width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin: 20px;
+	padding: 2px;
+}
+
+#members {
+	z-index: -1;
+	margin-top: 150px;
+}
+
+#members ul {
+	list-style-type: none;
+}
+
+.member a {
+	color: black;
+}
+
+#coach h1 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.group {
+	width: 35%;
+}
+
+#group1 {
+	float: left;
+}
+
+#group2 {
+	float: right;
+}
+
+.sec {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.sec h3 {
+	text-decoration: underline;
+}
+
+.sec a {
+	text-decoration: none;
+}
