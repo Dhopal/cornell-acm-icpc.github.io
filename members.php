@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Cornell ACM ICPC</title>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <link rel="stylesheet" type="text/css" href="style/about.css" />
+    <link rel="stylesheet" type="text/css" href="style/team.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -15,6 +15,11 @@
   </head>
 
   <?php
+    $seniors = array();
+    $juniors = array();
+    $sophomores = array();
+    $freshmen = array();
+
     class Member {
       public $name = '';
       public $major = '';
@@ -30,14 +35,15 @@
 
       function printDetails() {
         echo '<li class="member">';
-        if (file_exists("files/" . $this->name . ".pdf")) {
+        /*if (file_exists("files/" . $this->name . ".pdf")) {
           echo '<h1><a href="' . "files/" . $this->name . ".pdf" . '">' . $this->name . '</a></h1>';
         }
         else {
-          echo '<h1>' . $this->name . '</h1>';
-        }
+          
+        }*/
+        echo '<h2>' . $this->name . '</h2>';
 
-        if ($this->major !== "") {
+        /*if ($this->major !== "") {
           echo '<p>Major: ' . $this->major . '</p>';
         }
 
@@ -47,7 +53,7 @@
 
         if ($this->interests !== "") {
           echo '<p>Interests: ' . $this->interests . '</p>';
-        }
+        }*/
 
         echo '</li>';
       }
@@ -60,7 +66,7 @@
     function printYear($id, $label, $members) {
       echo '<div id="' . $id . '" class="group">';
       echo '<div class="subTitle">
-            <h2>' . $label . '</h2>
+            <h1>' . $label . '</h1>
           </div>
           <div class="contentArea">
             <ul>';
@@ -75,11 +81,8 @@
     }  
 
     function printMembers() {
+      global $seniors, $juniors, $sophomores, $freshmen;
       $row = 1;
-      $seniors = array();
-      $juniors = array();
-      $sophomores = array();
-      $freshmen = array();
 
       $today = getdate();
 
@@ -162,14 +165,14 @@
     <?php include("header.html"); ?>
 
     <div id="members">
-      <div id="subNav">
+      <!--<div id="subNav">
         <ul>
           <li id="seniorButton"><a href="#seniors">Seniors</a></li>
           <li id="juniorButton"><a href="#juniors">Juniors</a></li>
           <li id="sophButton"><a href="#sophomores">Sophomores</a></li>
           <li id="freshButton"><a href="#freshmen">Freshmen</a></li>
         </ul>
-      </div>
+      </div>-->
 
       <?php printMembers(); ?>
     </div>
