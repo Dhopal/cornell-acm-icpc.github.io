@@ -107,37 +107,34 @@
       <form action="contact.php" id="contact_form" method="post">
          <fieldset id="personal_info">
             <h1> Personal Information </h1>
-            <label for="first_name"> First Name* : </label>
-            <input type="text" name="first_name" id="first_name" title="First Name" placeholder="Sam" value = "$first_name" required>
-            $first_name_error
-            <br>
-            <label for="last_name"> Last Name* : </label>
-            <input type="text" name="last_name" id="last_name" title="Last Name (Surname)" placeholder="Jones" value = "$last_name" required>
-            $last_name_error
-            $combined_name_error
-            <br>
-            <br>
-            <label for="email"> Email* : </label>
-            <input type="email" name="email" id="email" Title="Email Address" placeholder="goodfood@yahoo.com" value = "$email" required>
-            <br>
-            <label for="email_confirmation"> Email Confirmation* : </label>
-            <input type="email" name="email_confirmation" id="email_confirmation" placeholder="Confirm Email Address" value = "$email_confirmation" required>
-            $email_error
+            <table>
+		<tr><td><label for="first_name"> First Name*</label></td>
+		<td><input type="text" name="first_name" id="first_name" title="First Name" placeholder="Sam" value = "$first_name" required></td>
+		$first_name_error</tr>
+		<tr><td><label for="last_name"> Last Name*</label></td>
+		<td><input type="text" name="last_name" id="last_name" title="Last Name (Surname)" placeholder="Jones" value = "$last_name" required></td>
+		$last_name_error
+		$combined_name_error</tr>
+		<tr><td><label for="email"> Email*</label></td>
+		<td><input type="email" name="email" id="email" Title="Email Address" placeholder="goodfood@yahoo.com" value = "$email" required></td></tr>
+		<tr><td><label for="email_confirmation"> Email Confirmation*</label></td>
+		<td><input type="email" name="email_confirmation" id="email_confirmation" placeholder="Confirm Email Address" value = "$email_confirmation" required></td>
+		$email_error</tr>
+            </table>
          </fieldset>
-         
+         <br>
          <fieldset id="questions">
             <h1> Questions </h1>
-            <p><label for="reason_for_contact">What is your reason for contact?*</label></p>
-            <select id="reason_for_contact" name="reason_for_contact">
-               <option value="Interested in joining the team">Interested in joining the team</option>
-               <option value="Information about logistics and meeting times">Information about logistics and meeting times</option>
-               <option value="You have an opportunity for the team">You have an opportunity for the team</option>
-            </select>
-            <br>
-            <br>
-            <label for="other_reason_for_contact">If you would like to elaborate on your reason for contact or have a general inquiry, feel free to do so below: </label>
-            <br>
-            <textarea id="other_reason_for_contact" name="other_reason_for_contact" rows="10" cols="95" placeholder="Other Reason for Contact" maxlength="$MAX_OTHER_REASON_FOR_CONTACT">$other_reason_for_contact</textarea>
+            <table>
+		<tr><td><p><label for="reason_for_contact">Reason for contact?*</label></p></td>
+		<td><select id="reason_for_contact" name="reason_for_contact">
+		   <option value="Interested in joining the team">Interested in joining the team</option>
+		   <option value="Information about logistics and meeting times">Information about logistics and meeting times</option>
+		   <option value="You have an opportunity for the team">You have an opportunity for the team</option>
+		</select></td></tr>
+		<tr><td><label for="other_reason_for_contact">If you'd like to elaborate</label></td>
+		<td><textarea id="other_reason_for_contact" name="other_reason_for_contact" rows="10" cols="47" placeholder="Other Reason for Contact" maxlength="$MAX_OTHER_REASON_FOR_CONTACT">$other_reason_for_contact</textarea></td></tr>
+         </table>
          </fieldset>
          <input type="submit" id="submit" name="submit" value="Finish">
       </form>

@@ -1,25 +1,13 @@
 /*GENERAL STYLE PAGE*/
 
-/*START:-----------------------NAVIGATION MENU----------------------------*/
+/*START:--------------------------------HEADER------------------------------------*/
 header{
 	font-family: 'Droid Sans', sans-serif;
+	height: 145px;
 }
 
 nav{
 	height: 35px;
-	text-align: center;
-}
-
-nav ul{
-	list-style: none;
-	position: relative;
-	display: inline-table;
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-
-nav ul li {
-	float: left;
 }
 
 #headbar{
@@ -36,7 +24,6 @@ nav ul li {
 	text-align: right;
 }
 #linkbar {
-	z-index: 1;
 	background-color: #A90916;
 	position: fixed;
 	top: 100px;
@@ -46,52 +33,71 @@ nav ul li {
 	min-width: 840px;
 	position: fixed;
 }
+
+/*-----------------Navigation----------------*/
+nav ul{
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-left: 256px;
+}
+
+nav ul li {
+	float: left;
+}
+
 #links{
-	color: white;
-	text-align: center;
+	text-align: left;
 	font-size: 150%;
 	padding-bottom: 10px;
 }
 #index_nav, #about_nav, #schedule_nav, #contact_nav, #team_nav{
 	color: white;
-	padding-left: 30px;
-	padding-right: 30px;
+	margin-right: 25px;
 	text-decoration: none;
 }
 #links a:hover{
 	color:#b2b2b2;
 	border-color: #b2b2b2;
 }
+
+/*-----------------Logo and Header----------------*/
+
 #logo{
-	width: 50%;
 	float:left;
 	text-align: left;
 }
 #logo_img{
-	width:150px;
-	height:80px;
+	width:200px;
+	height:120px;
 	padding-top: 10px;
 	padding-left: 20px;
 }
 #name{
-	text-align: right;
-	width: 50%;
-	float:right;
+	text-align: left;
+	padding-left: 256px;
 }
-#ACMICPC_name, #cornell_name{
+#ACM_name, #ICPC_name, #ACMICPC_name, #cornell_name{
 	padding-right: 20px;
+	padding-top:5px;
 	margin:0px;
 }
-#ACMICPC_name{
-	font-size: 40px;
-	/*padding-top: 20px;*/
+#ACM_name, #ICPC_name{
+	font-size: 25px;
+	text-decoration: underline;
 }
-#ACMICPC_name_link{
+#ACMICPC_name_link, #ACM_name_link, #ICPC_name_link{
 	text-decoration: none;
 	color:white;
 }
 
-/*END:-----------------------NAVIGATION MENU----------------------------*/
+/*Hide the Media-Sized header*/
+#ACMICPC_name{
+	display: none;
+}
+/*END:-----------------------HEADER----------------------------*/
 
 
 /*START:-----------------------BODY----------------------------*/
@@ -99,10 +105,12 @@ nav ul li {
 	z-index: -1;
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top: 150px;
+	margin-top: 5px;
 }
 
 body {
+	min-width: 1280px;
+	max-width:1280px;
 	background-color: #FAFAFA;
 	font-family: 'Noticia Text', serif;
 	margin: 0px;
@@ -110,9 +118,9 @@ body {
 }
 	
 #subNav {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 #subNav li {
@@ -122,10 +130,10 @@ body {
 #subNav a{
 	padding-left: 40px;
 	padding-right: 40px;
-    border-radius: 25px;
-    background-color: #A90916;
-    font-size: 20px;
-    text-decoration: none;
+	border-radius: 25px;
+	background-color: #A90916;
+	font-size: 20px;
+	text-decoration: none;
 	color: white;
 }
 
@@ -154,28 +162,27 @@ body {
 
 
 
-/*************************************************************MEDIA LAYOUT**************************************************************/
+/*************************************************************MEDIA LAYOUT 840px**************************************************************/
 @media only screen and (max-width:840px){
 /*START:-----------------------NAVIGATION MENU----------------------------*/
 
 #headbar{
-	min-width: 550px;
+	min-width: 400px;
 }
 #linkbar {
-	min-width: 600px;
+	min-width: 650px;
 }
 #links{
 	font-size: 150%;
+	padding-left: 20px;
 	text-align: left;
 }
-#links a {
-	padding-left: 20px;
-	padding-right: 20px;
+#index_nav, #about_nav, #schedule_nav, #contact_nav, #team_nav{
+	color: white;
+	margin-right: 25px;
+	text-decoration: none;
 }
-ul{
-	padding-left: 0px;
-	text-align: center;
-}
+
 #logo{
 	width: 50%;
 	text-align: left;
@@ -189,6 +196,28 @@ ul{
 	width: 50%;
 	float:right;
 }
+
+nav ul, #name{
+	padding-left: 0px;
+}
+
+#ACMICPC_name_link, #ACM_name_link, #ICPC_name_link{
+	text-decoration: none;
+	color:white;
+}
+
+/*Hide the Media-Sized header*/
+#ACMICPC_name{
+	display: inherit;
+	font-size: 30px;
+	margin: 0px;
+}
+
+#ACM_name_link, #ICPC_name_link{
+	display: none;
+}
+
+
 /*END:-----------------------NAVIGATION MENU----------------------------*/
 
 
@@ -202,3 +231,74 @@ ul{
 }
 
 }
+
+/*************************************************************MEDIA LAYOUT 510px**************************************************************/
+@media only screen and (max-width:510px){
+/*START:-----------------------NAVIGATION MENU----------------------------*/
+
+#headbar{
+	min-width: 200px;
+}
+#linkbar {
+	min-width: 350px;
+}
+#links{
+	font-size:80%;
+	padding-left: 20px;
+	text-align: left;
+}
+#index_nav, #about_nav, #schedule_nav, #contact_nav, #team_nav{
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+#logo{
+	width: 50%;
+	text-align: left;
+}
+#logo_img{
+	width:120px;
+	height:70px;
+}
+#name{
+	text-align: right;
+	width: 50%;
+	float:right;
+}
+
+nav ul, #name{
+	padding-left: 0px;
+}
+
+#ACMICPC_name_link, #ACM_name_link, #ICPC_name_link{
+	text-decoration: none;
+	color:white;
+}
+
+/*Hide the Media-Sized header*/
+#ACMICPC_name{
+	display: inherit;
+	font-size: 30px;
+	margin: 0px;
+}
+
+#ACM_name_link, #ICPC_name_link{
+	display: none;
+}
+
+
+/*END:-----------------------NAVIGATION MENU----------------------------*/
+
+
+#content{
+	margin-left:20px;
+	min-width: 400px;
+}
+
+#google_schedule{
+	width: 290px;
+}
+
+}
+

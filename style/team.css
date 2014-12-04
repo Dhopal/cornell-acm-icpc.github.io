@@ -1,8 +1,8 @@
 /*ABOUT STYLE PAGE*/
 
 /*Highlight current page:*/
-#about_nav {
-	border: 2px solid white;
+#team_nav {
+	border-bottom: solid medium white;
 }
 
 h2 a {
@@ -51,4 +51,16 @@ h2 a {
 
 .sec a {
 	text-decoration: none;
+}
+
+
+/*************************************************************MEDIA LAYOUT 840px**************************************************************/
+@media only screen and (max-width:840px){
+
+}
+
+/*************************************************************MEDIA LAYOUT 510px**************************************************************/
+@media only screen and (max-width:510px){
+
+
 }

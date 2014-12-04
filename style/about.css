@@ -25,3 +25,35 @@ h2 a {
 	margin: 20px;
 	padding: 2px;
 }
+
+/*************************************************************MEDIA LAYOUT 840px**************************************************************/
+@media only screen and (max-width:840px){
+#content{
+	width: 600px;
+}
+#sponsors img {
+	width: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin: 15px;
+	padding: 2px;
+}
+}
+
+/*************************************************************MEDIA LAYOUT 510px**************************************************************/
+@media only screen and (max-width:510px){
+	#content{
+	width: 350px;
+}
+
+#sponsors img {
+	width: 75px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	margin: 10px;
+	padding: 2px;
+}
+
+}

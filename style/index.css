@@ -17,3 +17,24 @@
 .message h3 {
 	color: #A90916;
 }
+
+/*************************************************************MEDIA LAYOUT 840px**************************************************************/
+@media only screen and (max-width:840px){
+h1{font-size: 20px;}
+#intro{
+	text-align: left;
+	font-size: 25px;
+}
+#announcements{width: 600px;}
+}
+
+/*************************************************************MEDIA LAYOUT 510px**************************************************************/
+@media only screen and (max-width:510px){
+h1{font-size: 15px;}
+#intro{
+	text-align: left;
+	font-size: 20px;
+	width: 400px;
+}
+#announcements, .message{width: 290px;}
+}
