@@ -35,15 +35,14 @@
 
       function printDetails() {
         echo '<li class="member">';
-        /*if (file_exists("files/" . $this->name . ".pdf")) {
-          echo '<h1><a href="' . "files/" . $this->name . ".pdf" . '">' . $this->name . '</a></h1>';
+        if (file_exists("files/" . $this->name . ".pdf")) {
+          echo '<h2><a href="' . "files/" . $this->name . ".pdf" . '">' . $this->name . '</a></h2>';
         }
         else {
-          
-        }*/
-        echo '<h2>' . $this->name . '</h2>';
+          echo '<h2>' . $this->name . '</h2>';
+        }
 
-        /*if ($this->major !== "") {
+        if ($this->major !== "") {
           echo '<p>Major: ' . $this->major . '</p>';
         }
 
@@ -53,7 +52,7 @@
 
         if ($this->interests !== "") {
           echo '<p>Interests: ' . $this->interests . '</p>';
-        }*/
+        }
 
         echo '</li>';
       }
@@ -144,9 +143,8 @@
               }
           }
           fclose($handle);
-      } else {
-        echo 'handle is false';
       }
+      
       //sort
       usort($seniors, "usortTest");
       usort($juniors, "usortTest");
@@ -165,14 +163,14 @@
     <?php include("header.html"); ?>
 
     <div id="members">
-      <!--<div id="subNav">
+      <div id="subNav">
         <ul>
           <li id="seniorButton"><a href="#seniors">Seniors</a></li>
           <li id="juniorButton"><a href="#juniors">Juniors</a></li>
           <li id="sophButton"><a href="#sophomores">Sophomores</a></li>
           <li id="freshButton"><a href="#freshmen">Freshmen</a></li>
         </ul>
-      </div>-->
+      </div>
 
       <?php printMembers(); ?>
     </div>

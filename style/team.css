@@ -12,7 +12,6 @@ h2 a {
 
 #members {
 	z-index: -1;
-	margin-top: 150px;
 }
 
 #members ul {
@@ -29,7 +28,6 @@ h2 a {
 }
 
 .group {
-	width: 35%;
 }
 
 #group1 {
