@@ -82,7 +82,7 @@
         
         //other_reason_for_contact_error validation:
          if( strlen($other_reason_for_contact) > $MAX_OTHER_REASON_FOR_CONTACT){
-            $other_reason_for_contact_error = make_err("other_reason_for_contact_error", "Please only include ingredient (at most $MAX_OTHER_REASON_FOR_CONTACT characters.)");
+            $other_reason_for_contact_error = make_err("other_reason_for_contact_error", "Please only include at most $MAX_OTHER_REASON_FOR_CONTACT characters.");
             $success = FALSE;
          }
 
@@ -95,8 +95,22 @@
       
       //----------FEEDBACK--------------
       if ( $success ) {
-          print ("<h1 class='success_message'>Your submission was successful!</h1>");
-          print("<p class='success_message'>We'll do our best to get back to you as soon as possible.");
+	
+	//--------------EMAIL THE COACHES-------------
+	$coach_email_address = "acm.icpc.cornell@gmail.com"; //Coaches' email address
+	$subject = "Form Submission"; //subject of email
+	$header = "From: <" . $email . ">";
+	
+	$message = $first_name . " " . $last_name . " wrote regarding: " . $reason_for_contact . ".\n\n";
+	if( strlen($other_reason_for_contact) != 0){ //if there is a message, add it to the email
+		$message .= $other_reason_for_contact . ".\n\n";
+	}
+	$message .= "Reply To: " . $email;
+	
+	mail($coach_email_address, $subject, $message, $header); //sends an email to the coaches' email address
+	
+	print ("<h1 class='success_message'>Your submission was successful!</h1>");
+	print("<p class='success_message'>We'll do our best to get back to you as soon as possible.");
       }
 
 //----------------------------------------------------------------------------------------------------------------------------------
@@ -110,16 +124,21 @@
             <table>
 		<tr><td><label for="first_name"> First Name*</label></td>
 		<td><input type="text" name="first_name" id="first_name" title="First Name" placeholder="Sam" value = "$first_name" required></td>
-		$first_name_error</tr>
+		<td>$first_name_error</td>
+		</tr>
+		
 		<tr><td><label for="last_name"> Last Name*</label></td>
 		<td><input type="text" name="last_name" id="last_name" title="Last Name (Surname)" placeholder="Jones" value = "$last_name" required></td>
-		$last_name_error
-		$combined_name_error</tr>
+		<td>$last_name_error $combined_name_error</td>
+		</tr>
+		
 		<tr><td><label for="email"> Email*</label></td>
 		<td><input type="email" name="email" id="email" Title="Email Address" placeholder="goodfood@yahoo.com" value = "$email" required></td></tr>
 		<tr><td><label for="email_confirmation"> Email Confirmation*</label></td>
 		<td><input type="email" name="email_confirmation" id="email_confirmation" placeholder="Confirm Email Address" value = "$email_confirmation" required></td>
-		$email_error</tr>
+		<td>$email_error</td>
+		</tr>
+		
             </table>
          </fieldset>
          <br>

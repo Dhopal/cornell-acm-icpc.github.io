@@ -15,6 +15,7 @@ h2 a {
 	background-color: white;
 	border: #D9D9D9 solid 1px;
 	margin-bottom: 50px;
+	min-width:595px;
 }
 
 #sponsors img {
@@ -43,10 +44,12 @@ h2 a {
 
 /*************************************************************MEDIA LAYOUT 510px**************************************************************/
 @media only screen and (max-width:510px){
-	#content{
+#content{
 	width: 350px;
 }
-
+#sponsors{
+	min-width: 350px;
+}
 #sponsors img {
 	width: 75px;
 	display: inline-block;
