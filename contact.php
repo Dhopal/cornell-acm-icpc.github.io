@@ -93,7 +93,7 @@
       }
       
       
-      //----------FEEDBACK--------------
+      //----------FEEDBACK - IF SUCCESSFUL FORM SUBMISSION--------------
       if ( $success ) {
 	
 	//--------------EMAIL THE COACHES-------------
@@ -109,8 +109,18 @@
 	
 	mail($coach_email_address, $subject, $message, $header); //sends an email to the coaches' email address
 	
+	
+	//--------------PRINT SUCCESS MESSAGE-------------
 	print ("<h1 class='success_message'>Your submission was successful!</h1>");
 	print("<p class='success_message'>We'll do our best to get back to you as soon as possible.");
+	
+	
+	//--------------CLEAR THE FORM-------------
+	$first_name = "";
+	$last_name = "";
+	$email = "";
+	$email_confirmation = "";
+	$other_reason_for_contact = "";
       }
 
 //----------------------------------------------------------------------------------------------------------------------------------
