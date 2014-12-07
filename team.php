@@ -15,16 +15,39 @@
 <body>
 	<?php include("header.html"); ?>
 	<div id="content">
-		<h1>Team:</h1>
-
 		<div id="group1" class="sec">
-			<h3>Coaches</h3>
-			<p><a href="daniel.php">Daniel Fleischman</a></p>
-			<p><a href="saketh.php">Saketh Are</a></p>
+			<h2>Coaches</h2>
+			<div id="coach1" class="coach">
+        	  <h3>Daniel Fleischman</h3>
+        	  <div class="details">
+        		<p>I am a PhD student in the ORIE department with minors in CS and Applied Math.
+          			I started competing on ACM in 2005, when I was in college and was hooked up on competitions since then.
+          			I had to retire from ACM-ICPC after my second world final in 2007 (you can't compete after two WF), so I started to coach in 2009,
+          			still in my home university, in Brazil. I've been the coach for Cornell since 2012, and I love it!
+          			<br><br>
+          			Even being retired from ACM-ICPC I can (and do) still compete on other programming competitions like Google CodeJam,
+          			Facebook HackerCup and Topcoder Open. Other competitions that interest me are Mathematics competitions (like the IMC)
+         			and puzzle competitions (like the Microsoft Puzzle Challenge).</p>
+         	  </div>
+      		</div>
+			<div id="coach2" class="coach">
+        	  <h3>Saketh Are</h3>
+        	  <div class="details">
+        		<p>I am a PhD student in the ORIE department with minors in CS and Applied Math.
+          			I started competing on ACM in 2005, when I was in college and was hooked up on competitions since then.
+          			I had to retire from ACM-ICPC after my second world final in 2007 (you can't compete after two WF), so I started to coach in 2009,
+          			still in my home university, in Brazil. I've been the coach for Cornell since 2012, and I love it!
+          			<br><br>
+          			Even being retired from ACM-ICPC I can (and do) still compete on other programming competitions like Google CodeJam,
+          			Facebook HackerCup and Topcoder Open. Other competitions that interest me are Mathematics competitions (like the IMC)
+         			and puzzle competitions (like the Microsoft Puzzle Challenge).</p>
+      		  </div>
+      		</div>
 		</div>
 
 		<div id="group2" class="sec">
-			<h3>Members</h3>
+			<br>
+			<h2>Members</h2>
 			<p><a href="members.php">Get to know the team</a></p>
 		</div>
 	</div>

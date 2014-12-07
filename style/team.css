@@ -27,10 +27,36 @@ h2 a {
 	padding-top: 10px;
 }
 
+.coach {
+	width: 48%;
+}
+
+.coach h3 {
+	text-align: center;
+	padding-top: 10px;
+	text-decoration: none;
+	color: #A90916;
+	text-transform: uppercase;
+}
+
+.details {
+	background-color: white;
+	border: #D9D9D9 solid 1px;
+}
+
+#coach1 {
+	float: left;
+}
+
+#coach2 {
+	float: right;
+}
+
+
 .group {
 }
 
-#group1 {
+/*#group1 {
 	float: left;
 }
 
@@ -41,10 +67,11 @@ h2 a {
 .sec {
 	padding-left: 10%;
 	padding-right: 10%;
-}
+}*/
 
-.sec h3 {
-	text-decoration: underline;
+.sec {
+	clear: both;
+	text-align: center;
 }
 
 .sec a {
