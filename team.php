@@ -11,7 +11,6 @@
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/member_control.js"></script>
 	<script type="text/javascript" src="js/smooth_scroll.js"></script>
 </head>
 <body>
@@ -171,6 +170,7 @@
             <li id="freshButton"><a href="#freshmen">Freshmen</a></li>
           </ul>
       	</div>
+      	<hr>
 		<div id="group1" class="sec">
 			<h2>Coaches</h2>
 			<div id="coach1" class="coach">
