@@ -1,18 +1,18 @@
 $(document).ready(function() {
-	$(".group .contentArea").hide();
-
 	$(".group").click(function(){
 		$content = $(this).find(".contentArea");
-		$visible = $content.is(':visible');
+		/*$visible = $content.is(':visible');
 		$(".group .contentArea").hide();
 		if ($visible) {
 			$content.hide();	
 		}
 		else {
 			$content.show();
-		}
+		}*/
 	});
-
+	$("#coachButton").click(function(){
+		$("#coaches").trigger("click");
+	});
 	$("#seniorButton").click(function(){
 		$("#seniors").trigger("click");
 	});

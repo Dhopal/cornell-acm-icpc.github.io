@@ -113,51 +113,6 @@ body {
 	padding: 0px;
 }
 	
-#subNav {
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 10px;
-}
-
-#subNav li {
-	display: inline-block;
-}
-
-#subNav a{
-	padding-left: 40px;
-	padding-right: 40px;
-	border-radius: 25px;
-	background-color: #A90916;
-	font-size: 20px;
-	text-decoration: none;
-	color: white;
-}
-
-#subNav a:hover {
-	background-color: #bd393b;
-}
-
-/*Sub titles*/
-.subTitle {
-	clear: both;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	vertical-align: center;
-	background-color: #EFEFEF;
-	border-top: 2px solid #CCCCCC;
-	border-bottom: 2px solid #CCCCCC;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
-.subTitle h2 {
-	padding-left: 20px;
-	padding-right: 20px;
-	display: inline-block;
-}
-
-
-
 /*************************************************************MEDIA LAYOUT 840px**************************************************************/
 @media only screen and (max-width:840px){
 /*START:-----------------------NAVIGATION MENU----------------------------*/

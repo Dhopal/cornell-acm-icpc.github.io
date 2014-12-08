@@ -11,10 +11,165 @@
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/member_control.js"></script>
 </head>
 <body>
+	<?php
+	$seniors = array();
+	$juniors = array();
+	$sophomores = array();
+	$freshmen = array();
+
+	class Member {
+	  public $name = '';
+	  public $major = '';
+	  public $cs = '';
+	  public $interests = '';
+
+	  public function __construct($name, $major, $cs, $interests) {
+	    $this->name = $name;
+	    $this->major = $major;
+	    $this->cs = $cs;
+	    $this->interests = $interests;
+	  }
+
+	  function printDetails() {
+	    echo '<li class="member">';
+	    if (file_exists("files/" . $this->name . ".pdf")) {
+	      echo '<h2><a href="' . "files/" . $this->name . ".pdf" . '">' . $this->name . '</a></h2>';
+	    }
+	    else {
+	      echo '<h2>' . $this->name . '</h2>';
+	    }
+
+	    if ($this->major !== "") {
+	      echo '<p>Major: ' . $this->major . '</p>';
+	    }
+
+	    if ($this->cs !== "") {
+	      echo '<p>Concentration: ' . $this->cs . '</p>';
+	    }
+
+	    if ($this->interests !== "") {
+	      echo '<p>Interests: ' . $this->interests . '</p>';
+	    }
+
+	    echo '</li>';
+	  }
+	}
+
+	function usortTest($a, $b) {
+	  return strcmp($a->name, $b->name);
+	} 
+
+	function printYear($id, $label, $members) {
+	  echo '<div id="' . $id . '" class="group">';
+	  echo '<div class="subTitle">
+	        <h3>' . $label . '</h3>
+	      </div>
+	      <div class="contentArea">
+	        <ul>';
+	  //add members
+	        foreach ($members as $m) {
+	          $m->printDetails();
+	        }
+
+	  echo  '</ul>
+	      </div>
+	    </div>';
+	}  
+
+	function printMembers() {
+	  global $seniors, $juniors, $sophomores, $freshmen;
+	  $row = 1;
+
+	  $today = getdate();
+
+	  $oldest = $today["year"];
+
+	  if ($today["mon"] >= 8) {
+	    $oldest++;
+	  }
+
+	  if (($handle = fopen("files/members.csv", "r")) !== FALSE) {
+	      while (!feof($handle)) {
+	          $data = fgetcsv($handle, 0, "\r");
+
+	          for ($x = 1; $x < count($data); $x++) {
+	            $person = explode(",", $data[$x]);
+
+	            $name = "";
+	            $year = "";
+	            $major = "";
+	            $cs = "";
+	            $interests = "";
+
+	            if (count($person) >= 1) {
+	              $name = $person[0];
+	            }
+	            if (count($person) >= 2) {
+	              $year = $person[1];
+	            }
+	            if (count($person) >= 3) {
+	              $major = $person[2];
+	            }
+	            if (count($person) >= 4) {
+	              $cs = $person[3];
+	            }
+	            if (count($person) >= 5) {
+	              $interests = $person[4];
+	            }
+
+	            $member = new Member($name, $major, $cs, $interests);
+
+	            //Find out which year the member is in
+	            //Add to correct class
+	            switch ($year) {
+	              case strval($oldest):
+	                  array_push($seniors, $member);
+	                  break;
+	              case strval($oldest + 1):
+	                  array_push($juniors, $member);
+	                  break;
+	              case strval($oldest + 2):
+	                  array_push($sophomores, $member);
+	                  break;
+	              case strval($oldest + 3):
+	                  array_push($freshmen, $member);
+	                  break;
+	          } 
+
+
+	          }
+	      }
+	      fclose($handle);
+	  }
+	  
+	  //sort
+	  usort($seniors, "usortTest");
+	  usort($juniors, "usortTest");
+	  usort($sophomores, "usortTest");
+	  usort($freshmen, "usortTest");
+
+	  //print
+	  printYear("seniors", "Seniors", $seniors);
+	  printYear("juniors", "Juniors", $juniors);
+	  printYear("sophomores", "Sophomores", $sophomores);
+	  printYear("freshmen", "Freshmen", $freshmen);
+	}
+	?>
+
 	<?php include("header.html"); ?>
 	<div id="content">
+		<div id="subNav">
+          <ul>
+          	<li id="coachButton"><a href="#group1">Coaches</a></li>
+            <li id="seniorButton"><a href="#seniors">Seniors</a></li>
+            <li id="juniorButton"><a href="#juniors">Juniors</a></li>
+            <li id="sophButton"><a href="#sophomores">Sophomores</a></li>
+            <li id="freshButton"><a href="#freshmen">Freshmen</a></li>
+          </ul>
+      	</div>
 		<div id="group1" class="sec">
 			<h2>Coaches</h2>
 			<div id="coach1" class="coach">
@@ -47,8 +202,9 @@
 
 		<div id="group2" class="sec">
 			<br>
+			<hr>
 			<h2>Members</h2>
-			<p><a href="members.php">Get to know the team</a></p>
+			<?php printMembers(); ?>
 		</div>
 	</div>
 </body>
