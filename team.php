@@ -34,12 +34,13 @@
 	  }
 
 	  function printDetails() {
-	    echo '<li class="member">';
+	    echo '<div class="member">';
+
 	    if (file_exists("files/" . $this->name . ".pdf")) {
-	      echo '<h2><a href="' . "files/" . $this->name . ".pdf" . '">' . $this->name . '</a></h2>';
+	      echo '<h3>' . $this->name . '   <a href="' . "files/" . $this->name . ".pdf" . '"><img src="images/resume.png" alt="resume" /></a>'. '</h3>';
 	    }
 	    else {
-	      echo '<h2>' . $this->name . '</h2>';
+	      echo '<h3>' . $this->name . '</h3>';
 	    }
 
 	    if ($this->major !== "") {
@@ -54,7 +55,7 @@
 	      echo '<p>Interests: ' . $this->interests . '</p>';
 	    }
 
-	    echo '</li>';
+	    echo '<br></div>';
 	  }
 	}
 
@@ -65,17 +66,15 @@
 	function printYear($id, $label, $members) {
 	  echo '<div id="' . $id . '" class="group">';
 	  echo '<div class="subTitle">
-	        <h3>' . $label . '</h3>
+	        <h2>' . $label . '</h2>
 	      </div>
-	      <div class="contentArea">
-	        <ul>';
+	      <div class="contentArea">';
 	  //add members
 	        foreach ($members as $m) {
 	          $m->printDetails();
 	        }
 
-	  echo  '</ul>
-	      </div>
+	  echo  '</div>
 	    </div>';
 	}  
 
