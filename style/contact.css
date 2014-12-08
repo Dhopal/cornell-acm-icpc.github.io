@@ -44,45 +44,39 @@
 
 /*******************MEDIA LAYOUT*******************/
 @media only screen and (max-width:840px){
-#contact_form{
-    width: 600px;
-    margin-left: 20px;
-}
-#required{
-    font-size: .75em;
-    margin-bottom: 0;
-    margin-left:20px;
-}
+    #contact_form{
+        width: 600px;
+        margin-left: 20px;
+    }
+    #required{
+        font-size: .75em;
+        margin-bottom: 0;
+        margin-left:20px;
+    }
 
-#personal_info, #questions{
-    min-width: 500px;
-}
-#other_reason_for_contact{
-	cols: 100;
-}
+    #personal_info, #questions{
+        min-width: 500px;
+    }
 }
 
 @media only screen and (max-width:510px){
-h1{
-	font-size: 20px;
-}
-label{
-	font-size: 10px;
-}
-#contact_form{
-    width: 300px;
-    margin-left: 20px;
-}
-#required{
-    font-size: .75em;
-    margin-bottom: 0;
-    margin-left:20px;
-}
+    h1{
+    	font-size: 20px;
+    }
+    label{
+    	font-size: 10px;
+    }
+    #contact_form{
+        width: 300px;
+        margin-left: 20px;
+    }
+    #required{
+        font-size: .75em;
+        margin-bottom: 0;
+        margin-left:20px;
+    }
 
-#personal_info, #questions{
-    min-width: 300px;
-}
-#other_reason_for_contact{
-	cols: 80;
-}
+    #personal_info, #questions{
+        min-width: 300px;
+    }
 }
