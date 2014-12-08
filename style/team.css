@@ -78,6 +78,10 @@ h2 a {
 	padding-bottom: 10px;
 }
 
+#subNav ul {
+	padding-left: 0px;
+}
+
 #subNav li {
 	display: inline-block;
 }
