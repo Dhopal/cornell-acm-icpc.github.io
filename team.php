@@ -35,8 +35,10 @@
 	  function printDetails() {
 	    echo '<div class="member">';
 
-	    if (file_exists("files/" . $this->name . ".pdf")) {
-	      echo '<h3>' . $this->name . '   <a href="' . "files/" . $this->name . ".pdf" . '"><img src="images/resume.png" alt="resume" /></a>'. '</h3>';
+	    $pdf = str_replace(" ", "_", $this->name);
+
+	    if (file_exists("files/" . $pdf . ".pdf")) {
+	      echo '<h3>' . $this->name . '   <a href= "files/"' . $pdf . ".pdf" . '"><img src="images/resume.png" alt="resume" /></a>'. '</h3>';
 	    }
 	    else {
 	      echo '<h3>' . $this->name . '</h3>';
